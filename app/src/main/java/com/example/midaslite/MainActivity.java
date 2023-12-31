@@ -35,7 +35,6 @@ public class MainActivity extends AppCompatActivity {
         Mat native_mat = new Mat();
         Utils.bitmapToMat(imageBitmap, native_mat);
         load_asset(native_mat.nativeObj, assetManager);
-        //Log.d("Emre", Environment.getExternalStorageDirectory().getAbsolutePath());
         if (!native_mat.empty()) {
             // Find the ImageView by its ID
             ImageView imageView = findViewById(R.id.imageView);
