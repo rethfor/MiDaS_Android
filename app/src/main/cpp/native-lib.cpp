@@ -22,7 +22,7 @@ Java_com_example_midaslite_MainActivity_stringFromJNI(
 
 extern "C"
 JNIEXPORT void JNICALL
-Java_com_example_midaslite_MainActivity_load_1asset(JNIEnv *env, jclass clazz, jlong mat, jobject assetManager) {
+Java_com_example_midaslite_MainActivity_invokeMidas(JNIEnv *env, jclass clazz, jlong mat, jobject assetManager) {
     auto* img = (cv::Mat*)mat;
     if (img->empty()) {
         LOGE("Input image is empty!");
